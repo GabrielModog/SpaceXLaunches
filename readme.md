@@ -1,15 +1,22 @@
-## Clone the app
+This project is separated in two pieces: client and server. Both need you install the
+dependencies before try running it.
 
-``git clone ``
+Follow the instructions and everything will be okay!
+
+## Clone the repo
+
+`git clone`
 
 ## Install dependencies
-Go to the directorie of the app and put in the terminal
-``yarn``
 
-## Run the app
+`yarn`
 
-``yarn dev``
+## Run the /server/ by using the command
 
-Will run the server and client in the same time. The client
-can be founded in the ``localhost:3000`` path and the server
-on ``localhost:4040``. 
+`yarn server`
+
+## and the /client/ using
+
+`yarn start`
+
+Look up where the port of the each project will be running.
