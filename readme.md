@@ -19,4 +19,4 @@ Follow the instructions and everything will be okay!
 
 `yarn start`
 
-Look up where the port of the each project will be running.
+Look up where the <b>PORT</b> of the each project will be running.
