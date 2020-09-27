@@ -30,5 +30,5 @@ the `server` and `client` project. But have no need in go to the folder and try 
 - bootstrap
 
 <hr>
-Project by [@GabrielModog](https://www.linkedin.com/in/gabrielmodog/) -
-MIT License.
+
+Project by [@GabrielModog](https://www.linkedin.com/in/gabrielmodog/) - MIT License.
