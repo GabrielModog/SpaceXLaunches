@@ -3,14 +3,10 @@ import { Link } from "react-router-dom";
 import classNames from "classnames";
 
 const LaunchItem = ({
-  launch: {
-    flight_number,
-    mission_name,
-    launch_date_local,
-    launch_success }
+  launch: { flight_number, mission_name, launch_date_local, launch_success },
 }) => {
   return (
-    <div className="card card-body mb-2">
+    <div className="card card-body mb-2 list__item">
       <div className="row pt-3">
         <div className="col-md-9">
           <h4>
@@ -18,7 +14,7 @@ const LaunchItem = ({
             <span
               className={classNames({
                 "text-success": launch_success,
-                "text-danger": !launch_success
+                "text-danger": !launch_success,
               })}
             >
               {mission_name}

@@ -1,0 +1,19 @@
+{
+  "name": "spacexlaunches",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/GabrielModog/SpaceX-Launches.git",
+  "author": "GabrielModog <gabrielmodog@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "client": "yarn workspace client start",
+    "server": "yarn workspace server start",
+    "start": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn client\""
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

@@ -16,19 +16,18 @@ const LAUNCHES_QUERY = gql`
 
 const Launches = () => {
   const { loading, error, data } = useQuery(LAUNCHES_QUERY);
-
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error...</p>;
 
-  console.log(data);
-
   return (
     <div>
-      <h3 className="my-4 text-center" >SpaceX</h3>
+      <h3 className="my-4 text-center">SpaceX</h3>
       <h1 className="display-4 my-4 text-center">Launches</h1>
-      {data.launches.map(launch => (
-        <LaunchItem key={launch.flight_number} launch={launch} />
-      ))}
+      <div className="list">
+        {data.launches.map((launch) => (
+          <LaunchItem key={launch.flight_number} launch={launch} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -6,8 +6,12 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import Launch from "./components/Launch";
 import Launches from "./components/Launches";
 
+import services from "./services";
+
+import "./styles/index.css";
+
 const client = new ApolloClient({
-  uri: "http://localhost:4040/graphql"
+  uri: services.endpoint,
 });
 
 function App() {
@@ -15,7 +19,6 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="container">
-          
           <Switch>
             <Route exact path="/" component={Launches} />
             <Route path="/launch/:flight_number" component={Launch} />
@@ -24,7 +27,6 @@ function App() {
           <h5 className="display-8 my-4 text-center">
             Developed by @gabrielmodog
           </h5>
-
         </div>
       </Router>
     </ApolloProvider>
